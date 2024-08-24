@@ -6,7 +6,7 @@ The business challenge addressed was the lack of personalised skincare product r
 
 ### Methods - Data Collection
 The following data was used:
-(1)	[Sephora product review data from Kaggle] (https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews)
+(1)	[Sephora product review data from Kaggle](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews)
 (2)	Synthetic user data from Mockaroo
 (3)	Real-time weather data from the OpenWeatherMap API
 
