@@ -22,4 +22,4 @@ Three clusters were identified, each with unique profiles characterised by speci
 ### Conclusion
 The app performs well but could benefit from integrating more environmental factors and regular updates to the clustering model. Future expansions should focus on incorporating additional data, such as products from other retailers, and refining the recommendation accuracy.
 
-## 
+##  Introduction
