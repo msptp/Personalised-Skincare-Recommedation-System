@@ -95,8 +95,18 @@ Validation is significant in statistical techniques, but it presents challenges 
 The subsequent step involved matching skin concerns and types with product descriptions in the Sephora dataset. A dictionary was created to map skin concerns and types to keywords from the product “highlights” column. For instance, keywords related to "acne" included acne, blemish, spots, spot, clear, clean, and pimple. Products containing these keywords were tagged in the "skin_concern_addressed" column.
 
 ### Cluster Profiling
+Exploratory Data Analysis (EDA) was used to define profiles for each cluster based on predominant characteristics in each cluster (refer to Figure 5 and Figure 6 as an example). Additionally, research was conducted to identify the preferred ingredients for each group, determining the most effective ingredients for the skin concerns specific to each cluster. The significant increase in people concerned about skin product ingredients makes this step particularly important.(9)
+
+![Distribution of Skin Concerns, Cluster3](assets/img/Picture5.png)
+
+Figure 5. Distribution of Skin Concerns in Cluster No. 3 (C3). Aging is clearly the predominant skin concern in C3.
+
+![Dsistribution of Skin Types, Cluster3](assets/img/Picture6.png)
+
+Figure 6. Distribution of Skin Types in Cluster No. 3 (C3). Dry is the main skin type in C3.
 
 ### Data Quality and Governance
+Ethical considerations were central to the analysis, addressing potential biases and privacy concerns. The use of synthetic data avoided data privacy concerns as part of the Data Protection Act 2018, and efforts were made to reduce biases by excluding irrelevant demographic variables. The project’s alignment with legal and regulatory obligations ensures responsible data handling, including vigorous data quality checks. Both manual inspection and automated checks (via Python) were used to effectively assess data quality dimensions (e.g., completeness, consistency, and uniqueness).(10)
 
 ### Infrastructure and Tools
 
@@ -109,3 +119,5 @@ The subsequent step involved matching skin concerns and types with product descr
 6. [How to Handle Categorical Variables in Clustering](https://medium.com/@tarek.tm/how-to-handle-categorical-variables-in-clustering-1daa3b05bf25)
 7. [Kmodes Clustering Algorithm for Categorical Data](https://www.analyticsvidhya.com/blog/2021/06/kmodes-clustering-algorithm-for-categorical-data/)
 8. [Ref8](https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11546)
+9. [It Skincare Ingredients](https://www.wellandgood.com/it-skin-care-ingredients/)
+10. [Meet the Data Quality Dimensions](https://www.gov.uk/government/news/meet-the-data-quality-dimensions)
