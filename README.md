@@ -56,7 +56,27 @@ Upon review, it was determined that age, gender, and skin type were irrelevant f
 
 ### Exploratory Data Analysis
 Multiple charts were plotted in Python to explore the Sephora data.
-![EDA1](assets/img/Figure 2024-07-28 232820 (0).png)
+![EDA1](assets/img/img1.png)
+![EDA2](assets/img/img2.png)
+![EDA3](assets/img/img3.png)
+![EDA4](assets/img/img4.png)
+![EDA5](assets/img/img5.png)
+![EDA6](assets/img/img6.png)
+![EDA7](assets/img/img7.png)
+![EDA8](assets/img/img8.png)
+![EDA9](assets/img/img9.png)
+![EDA10](assets/img/img10.png)
+![EDA11](assets/img/img11.png)
+![EDA12](assets/img/img12.png)
+![EDA13](assets/img/img13.png)
+![EDA14](assets/img/img14.png)
+![EDA15](assets/img/img15.png)
+![EDA16](assets/img/img16.png)
+![EDA17](assets/img/img17.png)
+![EDA18](assets/img/img18.png)
+![EDA19](assets/img/img19.png)
+![EDA20](assets/img/img20.png)
+![EDA21](assets/img/img21.png)
 
 ## References
 1. [The Power of ETL Piplines Tools and Best Practices](https://medium.com/@xhackfuel/the-power-of-etl-pipelines-tools-and-best-practices-e419688882b8)
