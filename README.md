@@ -109,6 +109,33 @@ Figure 6. Distribution of Skin Types in Cluster No. 3 (C3). Dry is the main skin
 Ethical considerations were central to the analysis, addressing potential biases and privacy concerns. The use of synthetic data avoided data privacy concerns as part of the Data Protection Act 2018, and efforts were made to reduce biases by excluding irrelevant demographic variables. The project’s alignment with legal and regulatory obligations ensures responsible data handling, including vigorous data quality checks. Both manual inspection and automated checks (via Python) were used to effectively assess data quality dimensions (e.g., completeness, consistency, and uniqueness).(10)
 
 ### Infrastructure and Tools
+Python was selected as the primary programming language for this project due to its extensive libraries for data manipulation and analysis. Its readability, often described as English-like, was particularly beneficial for a beginner like myself. Key libraries such as Pandas, Matplotlib, and Kmodes offered essential functions for data processing, visualization, and k-modes clustering, which were crucial to the project's success.(11,12) 
+
+The Integrated Development Environment (IDE) chosen was Spyder, similar to RStudio, an IDE I am familiar with from my workplace.(13) Spyder's interactivity, including its real-time code execution in the console, was vital for ensuring data processing tasks were correctly coded to clean, format, and create new features. Additionally, Spyder's environment allows for thorough data exploration, such as visualising data frames, sorting values in columns, and performing general sense-checks.(14) 
+
+Although R was considered as an alternative language, the need for a dashboard or app led to the preference for Python, based on recommendations from colleagues. Python’s compatibility with Streamlit, a library designed to turn scripts into web apps, was a significant factor. Streamlit supports the development of user interfaces and integrates seamlessly with other Python libraries used in this project, making it ideal for creating the skincare recommendation app.(15) 
+While Streamlit has limitations in terms of web app customisability compared to other libraries like Dash, it excels in simplicity and ease of use. This simplicity was advantageous for laying down the foundation for an insightful app. Despite its basic design capabilities, Streamlit enabled the efficient development of a functional and user-friendly skincare recommender.(16)
+
+This choice of infrastructure and tools ensured a robust and scalable solution, aligning with the project's goals in supporting its successful execution.
+
+## Data Visualisaitons and Dashboards
+Throughout the project, data visualisation was key for communicating insights effectively. Visuals in Python and charts in the Streamlit app were used to present key findings to users with specific skin concerns. For instance, the elbow method chart illustrated the optimal number of clusters, while scatter charts depicted product popularity versus price for the top 5 ranked products, based on the popularity score, aiding users in making informed purchase decisions (see Figure 7). These visuals were designed with skincare consumers in mind, ensuring they were both relevant and easy to understand. UX design principles, such as visual hierarchy (prioritising important information) and consistency (using uniform styles), were applied to ensure clarity, simplicity, and logical flow.(17) This approach effectively conveyed data in an accessible and user-friendly manner (See Figure 8).
+
+![app1](assets/img/Picture7.png)
+
+Figure 7. Scatter chart for Price vs Popularity on the top 5 ranked products in the Eye Care category.
+
+![app2](assets/img/Picture8.png)
+
+Figure 8. Screenshot of the app demonstrating UX principles (e.g., visual hierarchy and consistency).
+
+## Discussion and Conclusion
+While the app showed promise in delivering personalised skincare recommendations, there were limitations that need addressing. The reliance on synthetic user data, which lacks the complexity and variability of real-world data, affected the accuracy of the clusters and the recommender's effectiveness. Future work should focus on collecting the real user data and updating the clustering model regularly, ensuring the recommendations remain accurate and relevant. However, collecting user data presents challenges, including high costs, time consumption, and significant resource demands for collection, processing, and storage. Additionally, the voluntary nature of data submission could introduce biases, potentially skewing the results. One approach to mitigate these issues is to start with a smaller, more manageable dataset and progressively refine the model as more data becomes available. 
+
+The recommender could also benefit from incorporating additional environmental factors such as change in temperature, which has been reported to influence skin conditions.(18,19) Expanding the data sources to include products from other retailers would also enhance the app’s usefulness by offering a broader range of products.
+
+In conclusion, this project successfully produced an app for personalised skincare recommendations based on user input. While the current app provides useful suggestions and insights, future iterations should incorporate real user data to improve the clustering model.
+
 
 ## References
 1. [The Power of ETL Piplines Tools and Best Practices](https://medium.com/@xhackfuel/the-power-of-etl-pipelines-tools-and-best-practices-e419688882b8)
@@ -121,3 +148,12 @@ Ethical considerations were central to the analysis, addressing potential biases
 8. [Ref8](https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11546)
 9. [It Skincare Ingredients](https://www.wellandgood.com/it-skin-care-ingredients/)
 10. [Meet the Data Quality Dimensions](https://www.gov.uk/government/news/meet-the-data-quality-dimensions)
+11. [Advantages of Python over Other Programming Languages](https://www.analyticsvidhya.com/blog/2024/01/advantages-of-python-over-other-programming-languages/)
+12. [Python Preferred Languages Data Science](https://www.kdnuggets.com/2020/01/python-preferred-languages-data-science.html)
+13. [Pycharm vs Spyder](https://www.bestcolleges.com/pycharm-vs-spyder-which-should-you-use/)
+14. [Spyder Everything You Need to Know About The Python IDE for Data Science](https://datascientest.com/en/spyder-everything-you-need-to-know-about-the-python-ide-for-data-science)
+15. [Building Dashboards and Data Apps with Streamlit](https://medium.com/dp6-us-blog/building-dashboards-and-data-apps-with-streamlit-e1217cd3f00a)
+16. [Data Dashboarding Streamlit vs Dash vs Shiny vs Voila](https://www.datarevenue.com/en-blog/data-dashboarding-streamlit-vs-dash-vs-shiny-vs-voila)
+17. [Top 10 UX Design Principles for Superior User Experience](https://www.studio14online.co.uk/top-10-ux-design-principles-for-superior-user-experience/)
+18. [How Season Weather Affect Skin](https://www.allure.com/story/how-seasons-weather-affect-skin)
+19.	[How Your Skin Changes with The Seasons](https://cambridgelaserclinic.com/how-your-skin-changes-with-the-seasons/)
