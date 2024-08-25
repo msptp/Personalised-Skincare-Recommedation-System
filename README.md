@@ -78,9 +78,34 @@ Multiple charts were plotted in Python to explore the Sephora data.
 ![EDA20](assets/img/img20.png)
 ![EDA21](assets/img/img21.png)
 
+### Data Loading
+Both the Sephora and synthetic user datasets were securely stored in a structured system on the local PC. Real-time weather data from the OpenWeatherMap API was extracted during app usage, providing up-to-date humidity levels for weather-based skincare advice.
+
+## Data Analysis
+### K-modes Clustering
+Initially, one-hot encoding was planned to convert the categorical variables from the synthetic user data into binary variables for k-means clustering. However, research revealed that k-modes clustering, which directly handles categorical variables, was a more suitable approach.(6,7) Unlike k-means, k-modes clustering measures dissimilarities between data points and uses the mode instead of the mean.(7) Python's Kmodes library provided built-in functions to facilitate this clustering method. 
+With k-modes, the cost is defined as the sum of dissimilarities, replacing the sum of squared distances used in k-means.(7) To determine the optimal number of clusters (k), the elbow method was applied, informing the model on the appropriate number of clusters to identify within the user dataset (see Figure 4). The resulting model with three clusters was then integrated with the user dataset for use in the recommendation engine. 
+
+![Eblow Chart](assets/img/Picture4.png)
+
+Figure 4. Elbow Chart showing Optimal k.
+
+Validation is significant in statistical techniques, but it presents challenges in k-modes clustering due to the absence of truth labels in the data. The adjusted rand index (ARI) is typically used to measure cluster similarity, but it was inapplicable here due to the synthetic nature of the data and lack of predefined skincare groups.(8) Nonetheless, the elbow method provided a form of validation by optimising k and reducing cost.
+
+The subsequent step involved matching skin concerns and types with product descriptions in the Sephora dataset. A dictionary was created to map skin concerns and types to keywords from the product “highlights” column. For instance, keywords related to "acne" included acne, blemish, spots, spot, clear, clean, and pimple. Products containing these keywords were tagged in the "skin_concern_addressed" column.
+
+### Cluster Profiling
+
+### Data Quality and Governance
+
+### Infrastructure and Tools
+
 ## References
 1. [The Power of ETL Piplines Tools and Best Practices](https://medium.com/@xhackfuel/the-power-of-etl-pipelines-tools-and-best-practices-e419688882b8)
 2. [Mockaroo to the Rescue](https://plgah.medium.com/need-synthetic-data-mockaroo-to-the-rescue-e9c8159b0d9f)
 3. [Most Common Skin Concerns among US Skincare Shoppers by Generation](https://www.statista.com/statistics/1334325/most-common-skin-concerns-among-us-skin-care-shoppers-by-generation/)
 4. [ETL Best Practices](https://www.precisely.com/blog/big-data/etl-best-practices)
 5. [What is Feature Engineering?](https://towardsdatascience.com/what-is-feature-engineering-bfd25b2b26b2)
+6. [How to Handle Categorical Variables in Clustering](https://medium.com/@tarek.tm/how-to-handle-categorical-variables-in-clustering-1daa3b05bf25)
+7. [Kmodes Clustering Algorithm for Categorical Data](https://www.analyticsvidhya.com/blog/2021/06/kmodes-clustering-algorithm-for-categorical-data/)
+8. [Ref8](https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11546)
