@@ -55,7 +55,9 @@ Feature engineering, a method used by data scientists to enrich a dataset and ga
 Upon review, it was determined that age, gender, and skin type were irrelevant for the clustering analysis. Including these features could introduce biases, as the Sephora dataset lacks personal demographic information. Thus, focusing on skin type, skin concerns and product attributes ensured relevance and accuracy.
 
 ### Exploratory Data Analysis
-
+Multiple charts were plotted in Python to explore the Sephora data.
+![EDA1](assets/img/Figure 2024-07-28 232820 (0).png)
+![EDA2](assets/img/Figure 2024-07-28 232820 (0).png)
 
 ## References
 1. [The Power of ETL Piplines Tools and Best Practices](https://medium.com/@xhackfuel/the-power-of-etl-pipelines-tools-and-best-practices-e419688882b8)
